@@ -1,0 +1,4 @@
+#!/bin/bash
+mix local.hex --force
+mix local.rebar --force
+yes | MIX_ENV=test mix do deps.get, compile, test
